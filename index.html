@@ -1,20 +1,34 @@
-<header class="small-8 large-centered columns">
-  <h1>Wikipedia Search Tool</h1>
-</header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wikipedia Viewer | justinhiltz.com</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="small-8 large-centered columns">
+      <h1 class="lead-header">Wikipedia Search Tool</h1>
+    </header>
 
-<div class="row">
-  <div class="column column-8">
     <div class="row">
-      <div class="column column-10">
-        <input type="search" id="search" placeholder="search for wikipedia article">
-      </div>
-      <div class="column">
-        <a href="https://en.wikipedia.org/wiki/Special:Random" class="button postfix" target="_blank">Random</a>
+      <div class="column column-8 search-column">
+        <div class="row">
+          <div class="column column-10">
+            <input type="search" id="search" placeholder="search for wikipedia article">
+          </div>
+          <div class="column">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" class="button postfix" target="_blank">Random</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="row">
-  <div id="results" class="small-8 large-centered columns"></div>
-</div>
+    <div class="row">
+      <div id="results" class="column column-8"></div>
+    </div>
+
+  </body>
+</html>
