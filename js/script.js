@@ -5,7 +5,7 @@
 function searchWiki(query) {
 
   $.ajax({
-    url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&action=query&list=search&srsearch="+query+"&callback=?",
+    url: "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&action=query&list=search&srsearch="+query+"&callback=?",
     contentType: "application/json; charset=utf-8",
     async: false,
     dataType: "jsonp",
